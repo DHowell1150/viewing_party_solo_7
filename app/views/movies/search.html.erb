@@ -1,0 +1,7 @@
+<%= button_to "Discover Top Rated Movies", user_movies_path, method: :get, params: { top_rated: true } %><br>
+
+<%= form_with url: user_discover_movie_path,  method: :get, data: {turbo: false}, local: true do |f| %>
+  <%= f.label :movie_title %>
+	<%= f.text_field :movie_title %><br>
+  <%= f.submit "Search by Movie Title" %>
+<% end %>
