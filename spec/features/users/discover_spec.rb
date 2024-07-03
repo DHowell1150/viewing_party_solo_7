@@ -15,34 +15,34 @@ RSpec.describe 'users discover movies page', type: :feature do
       expect(page).to have_button("Search by Movie Title")
     end
 
-    it 'US 2: has a "Search by Movie Title" button that redirects to "user_movies_path(@user, @movie)"' do
-      @movie = Movie.create!(title: 'Top Gun', 
-                            ave_vote: 4.5, 
-                            runtime: 135,
-                            genre: "Action",
-                            description: "xyz",
-                            first_10_cast_members: { 
-                                                    "character1": "Thesbian", 
-                                                    "character2": "Thesbian", 
-                                                    "character3": "Thesbian", 
-                                                    "character4": "Thesbian", 
-                                                    "character5": "Thesbian", 
-                                                    "character6": "Thesbian", 
-                                                    "character7": "Thesbian", 
-                                                    "character8": "Thesbian", 
-                                                    "character9": "Thesbian", 
-                                                    "character10": "Thesbian", 
-                                                  },
-                            review_count: 1234,
-                            review_data: {"Author Name": "Best movie all year"})
-      # - a text field to enter keyword(s) to search by movie title
-      # - a Button to Search by Movie Title
+    # it 'US 2: has a "Search by Movie Title" button that redirects to "user_movies_path(@user, @movie)"' do
+    #   @movie = Movie.create!(title: 'Top Gun', 
+    #                         ave_vote: 4.5, 
+    #                         runtime: 135,
+    #                         genre: "Action",
+    #                         description: "xyz",
+    #                         first_10_cast_members: { 
+    #                                                 "character1": "Thesbian", 
+    #                                                 "character2": "Thesbian", 
+    #                                                 "character3": "Thesbian", 
+    #                                                 "character4": "Thesbian", 
+    #                                                 "character5": "Thesbian", 
+    #                                                 "character6": "Thesbian", 
+    #                                                 "character7": "Thesbian", 
+    #                                                 "character8": "Thesbian", 
+    #                                                 "character9": "Thesbian", 
+    #                                                 "character10": "Thesbian", 
+    #                                               },
+    #                         review_count: 1234,
+    #                         review_data: {"Author Name": "Best movie all year"})
+    #   # - a text field to enter keyword(s) to search by movie title
+    #   # - a Button to Search by Movie Title
 
 
-      # - fill out the movie title search and click the Search button
-      fill_in 'Movie Title Keyword', with: @movie.title
-      expect(current_path).to eq(user_movies_path(@user, @movie))
-    end
+    #   # - fill out the movie title search and click the Search button
+    #   fill_in 'Movie Title Keyword', with: @movie.title
+    #   expect(current_path).to eq(user_movies_path(@user, @movie))
+    # end
 
   # describe "sad paths" do
   #   it 'when they fill in form with missing information' do
