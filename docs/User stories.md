@@ -5,6 +5,7 @@ As a user,
 When I visit the '/users/:id/discover' path (where :id is the id of a valid user),
 I should see
 - a Button to Discover Top Rated Movies
+
 - a text field to enter keyword(s) to search by movie title
 - a Button to Search by Movie Title
 
