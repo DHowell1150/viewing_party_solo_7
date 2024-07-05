@@ -14,6 +14,7 @@ RSpec.describe MovieService do
   end
 
   it "can get review data from review endpoint" do
+    movie_id = 278
     params = {language: "en-US", page: 1}
     query = MovieService.call_api("/3/movie/#{movie_id}/reviews", { language: 'en-US', page: 1 })
     # movie = query.first

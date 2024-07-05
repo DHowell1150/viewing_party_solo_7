@@ -15,10 +15,9 @@ class MoviesController < ApplicationController
   end
 
   def show
+    @user = User.find(params[:user_id])
     @movies = MovieFacade.top_rated_movies
-    require 'pry' ; binding.pry
-    @movie 
-
+    @movie = @movies.first
   end
 
 private

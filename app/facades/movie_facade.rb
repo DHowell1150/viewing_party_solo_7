@@ -13,7 +13,9 @@ class MovieFacade
   end
 
   def self.movie_reviews(movie_id)
+    # movie_id = 278
     params = {language: "en-US", page: 1}
-    movie_reviews = MovieServices.call_api("/3/movie/#{movie_id}/reviews", params)
+    movie_reviews = MovieService.call_api("/3/movie/#{movie_id}/reviews", params)[:results]
+    movie_review = movie_reviews.first
   end
 end
