@@ -1,7 +1,6 @@
 require "rails_helper"
 
 RSpec.describe Movie do
-  movie_data = 
   it "exists and has attributes" do
     movie_data = {
       "adult": false,
@@ -22,7 +21,8 @@ RSpec.describe Movie do
       "video": false,
       "vote_average": 7.715,
       "vote_count": 1668
-      }
+    }
+
     movie = Movie.new(movie_data)
     expect(movie).to be_a(Movie)
     expect(movie.title).to be_a(String)

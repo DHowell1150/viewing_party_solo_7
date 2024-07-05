@@ -11,7 +11,7 @@ I should see
 
 Notes:
 
-When the user clicks on the Top Rated Movies OR the search button, they should be taken to the movies results page (more details of this on the 2. Movies Results Page story).
+When the user clicks on the Top Rated Movies OR the search button, they should be taken to the  j page (more details of this on the 2. Movies Results Page story).
 
 The movies will be retrieved by consuming The MovieDB API.
 

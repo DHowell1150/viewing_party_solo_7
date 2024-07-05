@@ -1,0 +1,11 @@
+<h1><%= @movies.count %> Results </h1>
+<% @movies.each do |movie|  %>
+  <ul>
+  <div class="movie">
+    <h4><p class="title">Title: <%= movie.title %></p></h4>
+    <p class="vote_ave">Average Vote: <%= movie.vote_ave %></p>
+    <p class="id"><%= movie.id %></p>
+    <br>
+  </div>
+  </ul>
+<% end %>

@@ -1,0 +1,2 @@
+<%= button_to 'Create a Viewing Party', user_movie_path(@user, @movie), method: :get%><br>
+<%= button_to 'Return to the Discover Page', user_discover_movie(@user), method: :get, params: { top_rated: true } %><br>

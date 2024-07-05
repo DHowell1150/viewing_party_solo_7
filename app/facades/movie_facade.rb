@@ -8,7 +8,12 @@ class MovieFacade
 
     top_rated_movies.map do |movie|
       Movie.new(movie)
-      #need to make a PORO
+      #now make a PORO 
     end
+  end
+
+  def self.movie_reviews(movie_id)
+    params = {language: "en-US", page: 1}
+    movie_reviews = MovieServices.call_api("/3/movie/#{movie_id}/reviews", params)
   end
 end
