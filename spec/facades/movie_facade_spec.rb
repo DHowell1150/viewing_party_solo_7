@@ -23,7 +23,7 @@ RSpec.describe MovieFacade do
     # expect(movie_reviews[:author]).to be_a(String)
     # expect(movie_reviews[:author_details]).to be_a(Hash)
     # expect(movie_reviews[:author_details][:username]).to be_a(String)
-    # expect(movie_reviews[:author_details][:avatar_path]).to be_a(String || nil)
+    # expect(movie_reviews[:author_details][:avatar_path]).to be_a(String || nil) ( if runtime.nil? return "N/A")
     # expect(movie_reviews[:author_details][:rating]).to be_a(Float)
   end
 end

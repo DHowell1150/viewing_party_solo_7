@@ -6,6 +6,7 @@ RSpec.describe MovieService do
     query = MovieService.call_api('/3/discover/movie')[:results]
     movie = query.first
     expect(query).to be_a(Array)
+    expect(movie).to be_a(Hash)
 
     #the list of what want to query
     expect(movie[:original_title]).to be_a(String)

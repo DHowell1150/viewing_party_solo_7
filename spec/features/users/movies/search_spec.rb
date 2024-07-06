@@ -26,6 +26,7 @@ RSpec.describe 'movie search', type: :feature do
         fill_in :movie_title, with: 'Top Gun'
         click_on 'Search by Movie Title'
         expect(current_path).to eq(user_movies_path(@user))
+        
       end
     end
   end
