@@ -12,6 +12,13 @@ class MovieFacade
     end
   end
 
+  def self.searched_title(movie_title)
+    params = {title: movie_title}
+    searched_movie = MovieService.call_api('/3/discover/movie')
+
+    movie_title_search
+  end
+
   def self.movie_reviews(movie_id)
     # movie_id = 278
     params = {language: "en-US", page: 1}

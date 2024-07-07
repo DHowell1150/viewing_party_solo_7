@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe MovieFacade do
-  it "finds top rated movies" do
+  it 'finds top rated movies' do
     top_movies = MovieFacade.top_rated_movies
     movie = top_movies.first
 
@@ -12,10 +12,22 @@ RSpec.describe MovieFacade do
     expect(movie.id).to be_a(Integer)
   end
 
-  it "finds top rated movies" do
-    movie_id = 278
+  it 'finds searched movie title' do
+    searched_movies = MovieFacade.searched_title[:results]
+    searched_movie = searched_movies.first
 
-    movie_review = MovieFacade.movie_reviews(movie_id)
+    expect(searched_movies).to be_a(Array)
+    expect(searched_movie).to be_a(Hash)
+    require 'pry' ; binding.pry
+    expect(searched_movie.title).to be_a(String)
+    expect(searched_movie.vote_ave).to be_a(Float)
+    expect(searched_movie.id).to be_a(Integer)
+  end
+
+    # it "movie_reviews" do
+    #   movie_id = 278
+
+    # movie_review = MovieFacade.movie_reviews(movie_id)
     # movie_review = movie_reviews.first
     # expect(movie_reviews).to be_a(Array)
     # expect(movie_review).to be_a(Hash)
@@ -25,5 +37,5 @@ RSpec.describe MovieFacade do
     # expect(movie_reviews[:author_details][:username]).to be_a(String)
     # expect(movie_reviews[:author_details][:avatar_path]).to be_a(String || nil) ( if runtime.nil? return "N/A")
     # expect(movie_reviews[:author_details][:rating]).to be_a(Float)
-  end
+  # end
 end

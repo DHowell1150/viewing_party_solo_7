@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   resources :users, only: [:show, :create] do
     get '/discover', to: 'movies#search', as: 'discover_movie'
+    post '/movies', to: 'movies#search'
     resources :movies, only: [:index, :show]
       resources :viewing_party, only: [:new, :create]
   end
