@@ -44,6 +44,8 @@ gem "bootsnap", require: false
 
 gem "bootstrap" 
 gem "faker"
+gem "factory_bot_rails"
+gem "faraday"
 
 
 
@@ -57,6 +59,8 @@ gem "shoulda-matchers"
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "pry"
+  gem "launchy"
+  gem 'jsonapi-serializer'
 end
 
 group :development do
@@ -76,4 +80,6 @@ group :test do
   gem "capybara"
   gem "launchy"
   gem "simplecov"
+  gem "webmock"
+  gem "vcr"
 end

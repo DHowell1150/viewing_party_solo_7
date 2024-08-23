@@ -1,0 +1,17 @@
+<h1> Movie List </h1>
+<%= button_to "Discover", user_discover_movie_path(@user), method: :get %>
+
+<% if @top_movies != nil %>
+  <ul class="top_movie" >
+  <% @top_movies.each do |movie| %> 
+      <li class="title"><%= link_to movie.title, user_movie_path(@user, movie), params { movie.title } %></li>
+      <ul class="vote_average">Vote Average: <%= movie.vote_average %></ul><br>
+  <% end %>
+  
+<% elsif @searched_title != nil%>
+<ul class="searched_title" >
+  <% @searched_title.each do |movie| %>
+    <li class="title" > <h5> <%= link_to movie.title, user_movie_path(@user, movie), params { movie.title } %> </h5></li>
+    <li class="vote_average" > Vote Average: <%= movie.vote_average %></ul><br>
+  <% end %>
+<% end %>

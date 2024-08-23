@@ -33,6 +33,8 @@ rescue ActiveRecord::PendingMigrationError => e
 end
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
+  config.include FactoryBot::Syntax::Methods
+
   config.fixture_paths = [
     Rails.root.join('spec/fixtures')
   ]
@@ -69,5 +71,16 @@ Shoulda::Matchers.configure do |config|
   config.integrate do |with|
     with.test_framework :rspec
     with.library :rails
+  end
+end
+
+VCR.configure do |config|
+  config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
+  config.hook_into :webmock
+  config.allow_http_connections_when_no_cassette = true
+  config.configure_rspec_metadata!
+  config.filter_sensitive_data('<CONGRESS_API_KEY>') { Rails.application.credentials.movies[:key] }
+  config.before_record do |i|
+    i.response.body.force_encoding('UTF-8')
   end
 end

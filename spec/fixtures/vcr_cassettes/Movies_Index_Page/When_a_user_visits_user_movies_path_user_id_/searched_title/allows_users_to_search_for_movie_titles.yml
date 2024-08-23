@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=<CONGRESS_API_KEY>&query=Deadpool
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Fri, 23 Aug 2024 14:11:00 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=3704
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - 22b2ea9c5fda5a590b66bea5b1e64a47
+      X-Memc-Age:
+      - '18511'
+      X-Memc-Expires:
+      - '3704'
+      Etag:
+      - W/"c52785b9e8fb209a9f2012e2ba7d2282"
+      Vary:
+      - Accept-Encoding,accept-encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 bd96da9a6020f2a5d5499cedf78d68f2.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN52-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - OeGz0k6zoZsVtxqz6Cu6lC4XX9OuGhhGhuW_ne3BF1w-s0HQg-5hAg==
+    body:
+      encoding: UTF-8
+      string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/en971MEXui9diirXlogOrPKmsEn.jpg","genre_ids":[28,12,35],"id":293660,"original_language":"en","original_title":"Deadpool","overview":"The
+        origin story of former Special Forces operative turned mercenary Wade Wilson,
+        who, after being subjected to a rogue experiment that leaves him with accelerated
+        healing powers, adopts the alter ego Deadpool. Armed with his new abilities
+        and a dark, twisted sense of humor, Deadpool hunts down the man who nearly
+        destroyed his life.","popularity":343.484,"poster_path":"/3E53WEZJqP6aM84D8CckXx4pIHw.jpg","release_date":"2016-02-09","title":"Deadpool","video":false,"vote_average":7.62,"vote_count":30560},{"adult":false,"backdrop_path":"/yDHYTfA3R0jFYba16jBB1ef8oIt.jpg","genre_ids":[28,35,878],"id":533535,"original_language":"en","original_title":"Deadpool
+        \u0026 Wolverine","overview":"A listless Wade Wilson toils away in civilian
+        life with his days as the morally flexible mercenary, Deadpool, behind him.
+        But when his homeworld faces an existential threat, Wade must reluctantly
+        suit-up again with an even more reluctant Wolverine.","popularity":5845.013,"poster_path":"/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg","release_date":"2024-07-24","title":"Deadpool
+        \u0026 Wolverine","video":false,"vote_average":7.761,"vote_count":2190},{"adult":false,"backdrop_path":"/3P52oz9HPQWxcwHOwxtyrVV1LKi.jpg","genre_ids":[28,35,12],"id":383498,"original_language":"en","original_title":"Deadpool
+        2","overview":"Wisecracking mercenary Deadpool battles the evil and powerful
+        Cable and other bad guys to save a boy''s life.","popularity":231.604,"poster_path":"/to0spRl1CMDvyUbOnbb4fTk3VAd.jpg","release_date":"2018-05-10","title":"Deadpool
+        2","video":false,"vote_average":7.492,"vote_count":17589},{"adult":false,"backdrop_path":"/5ZSwZPKgcTJJwhxjbOHeoBTVaKh.jpg","genre_ids":[35,28,12],"id":567604,"original_language":"en","original_title":"Once
+        Upon a Deadpool","overview":"A kidnapped Fred Savage is forced to endure Deadpool''s
+        PG-13 rendition of Deadpool 2, as a Princess Bride-esque story that''s full
+        of magic, wonder, and zero Fs.","popularity":115.585,"poster_path":"/5Ka49BWWyKMXr93YMbH5wLN7aAM.jpg","release_date":"2018-12-11","title":"Once
+        Upon a Deadpool","video":false,"vote_average":7.082,"vote_count":749},{"adult":false,"backdrop_path":"/sUELHitVw5U0tOJg0x34wY7eTuh.jpg","genre_ids":[28,35,80],"id":558144,"original_language":"en","original_title":"Deadpool:
+        No Good Deed","overview":"Deadpool sees an opportunity to save the day, but
+        it doesn''t go entirely as planned.","popularity":119.393,"poster_path":"/wlKU9yB0Q8nfPMakBcSBT0JGS7.jpg","release_date":"2017-03-03","title":"Deadpool:
+        No Good Deed","video":false,"vote_average":7.143,"vote_count":491}],"total_pages":1,"total_results":5}'
+  recorded_at: Fri, 23 Aug 2024 14:11:00 GMT
+recorded_with: VCR 6.2.0
