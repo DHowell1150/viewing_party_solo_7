@@ -13,18 +13,13 @@ class MoviesController < ApplicationController
   def index
     @user = User.find(params[:user_id])
     if params[:top_rated]
-      @top_movies = MovieFacade.top_rated_movies
-    elsif params[:search].present?
-      @searched_title = MovieFacade.search_title(params[:search])
-    else
-      @top_movies = []
-      @searched_title = []
+      @movies = MovieFacade.top_rated_movies
+    elsif params[:search]
+      @movies = MovieFacade.search_title(params[:search])
     end
   end
-
   def show
     #The line below is where I am erroring out because my ID is a movie object??
-    movie_data = MovieFacade.search_title(params[:id])
-    @movie = Movie.new(movie_data)
+    @movie_data = MovieFacade.search_title(params["title"])
   end
 end

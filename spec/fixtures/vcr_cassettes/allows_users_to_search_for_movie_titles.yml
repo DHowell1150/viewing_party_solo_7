@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=<CONGRESS_API_KEY>&%7B:query=%3E%22Deadpool%22%7D%5Bquery%5D=Deadpool
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sun, 25 Aug 2024 20:05:04 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=2973
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - 0b5947bc31aeddd8f20b6f446a3fa89e
+      X-Memc-Age:
+      - '20654'
+      X-Memc-Expires:
+      - '2973'
+      Etag:
+      - W/"0e23279b004381f72a34159d5c7dfd1f"
+      Vary:
+      - Accept-Encoding,accept-encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 9b688924e5b0f0b5e4c639d19cb145f0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN52-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - p9METJn1WsY5AN8Y-Z2e2vVlufNBbLsaft7OHWN48rC_VmW1ZY7Yqg==
+    body:
+      encoding: UTF-8
+      string: '{"page":1,"results":[],"total_pages":1,"total_results":0}'
+  recorded_at: Sun, 25 Aug 2024 20:05:04 GMT
+recorded_with: VCR 6.2.0

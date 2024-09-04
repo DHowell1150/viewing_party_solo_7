@@ -1,12 +1,12 @@
 class MoviesService
-  def self.call_api(endpoint, params = {})
+  def self.call_api(endpoint, params)
     response = conn.get(endpoint) do |req|
+      req.params = params
       req.params[:api_key] = Rails.application.credentials.movies[:key]
-      req.params[params] = params
     end
     parse_data(response)
   end
-  
+
   private
 
   def self.conn

@@ -20,41 +20,41 @@ http_interactions:
     headers:
       Content-Type:
       - application/json;charset=utf-8
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '2773'
       Connection:
       - keep-alive
       Date:
-      - Tue, 27 Aug 2024 00:17:49 GMT
+      - Tue, 03 Sep 2024 00:21:37 GMT
       Server:
       - openresty
       Cache-Control:
-      - public, max-age=14311
+      - public, max-age=8849
       X-Memc:
       - HIT
       X-Memc-Key:
       - 22b2ea9c5fda5a590b66bea5b1e64a47
       X-Memc-Age:
-      - '13890'
+      - '14018'
       X-Memc-Expires:
-      - '14311'
+      - '8849'
       Etag:
-      - W/"24e7265c446fb86859ce85a8bcbe2d9d"
+      - W/"68cb9db7a23888072c42acbe958d0021"
       Vary:
       - Accept-Encoding,accept-encoding
       - Origin
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 8a50fe9452625079391cf0ce7a3e0c56.cloudfront.net (CloudFront)
+      - 1.1 2e1534b83d4f4440d78443bc3fea0116.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - DEN52-P2
+      - DEN52-C1
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - S0ZZw7Ozx8chPhsh7E7DgVCEeV2vBpcXeiGffNho-tdT3kkZL52L5w==
+      - E2tdYIpjSLn0uuwwkFY61hCG4c6j3ux2azVjuksTMqxZHexGPV4klQ==
       Age:
-      - '9408'
+      - '356'
     body:
       encoding: UTF-8
       string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/en971MEXui9diirXlogOrPKmsEn.jpg","genre_ids":[28,12,35],"id":293660,"original_language":"en","original_title":"Deadpool","overview":"The
@@ -62,21 +62,21 @@ http_interactions:
         who, after being subjected to a rogue experiment that leaves him with accelerated
         healing powers, adopts the alter ego Deadpool. Armed with his new abilities
         and a dark, twisted sense of humor, Deadpool hunts down the man who nearly
-        destroyed his life.","popularity":404.896,"poster_path":"/3E53WEZJqP6aM84D8CckXx4pIHw.jpg","release_date":"2016-02-09","title":"Deadpool","video":false,"vote_average":7.62,"vote_count":30588},{"adult":false,"backdrop_path":"/yDHYTfA3R0jFYba16jBB1ef8oIt.jpg","genre_ids":[28,35,878],"id":533535,"original_language":"en","original_title":"Deadpool
+        destroyed his life.","popularity":261.516,"poster_path":"/3E53WEZJqP6aM84D8CckXx4pIHw.jpg","release_date":"2016-02-09","title":"Deadpool","video":false,"vote_average":7.621,"vote_count":30641},{"adult":false,"backdrop_path":"/yDHYTfA3R0jFYba16jBB1ef8oIt.jpg","genre_ids":[28,35,878],"id":533535,"original_language":"en","original_title":"Deadpool
         \u0026 Wolverine","overview":"A listless Wade Wilson toils away in civilian
         life with his days as the morally flexible mercenary, Deadpool, behind him.
         But when his homeworld faces an existential threat, Wade must reluctantly
-        suit-up again with an even more reluctant Wolverine.","popularity":6974.055,"poster_path":"/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg","release_date":"2024-07-24","title":"Deadpool
-        \u0026 Wolverine","video":false,"vote_average":7.763,"vote_count":2404},{"adult":false,"backdrop_path":"/3P52oz9HPQWxcwHOwxtyrVV1LKi.jpg","genre_ids":[28,35,12],"id":383498,"original_language":"en","original_title":"Deadpool
+        suit-up again with an even more reluctant Wolverine.","popularity":5116.296,"poster_path":"/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg","release_date":"2024-07-24","title":"Deadpool
+        \u0026 Wolverine","video":false,"vote_average":7.767,"vote_count":2570},{"adult":false,"backdrop_path":"/3P52oz9HPQWxcwHOwxtyrVV1LKi.jpg","genre_ids":[28,35,12],"id":383498,"original_language":"en","original_title":"Deadpool
         2","overview":"Wisecracking mercenary Deadpool battles the evil and powerful
-        Cable and other bad guys to save a boy''s life.","popularity":296.739,"poster_path":"/to0spRl1CMDvyUbOnbb4fTk3VAd.jpg","release_date":"2018-05-10","title":"Deadpool
-        2","video":false,"vote_average":7.492,"vote_count":17611},{"adult":false,"backdrop_path":"/5ZSwZPKgcTJJwhxjbOHeoBTVaKh.jpg","genre_ids":[35,28,12],"id":567604,"original_language":"en","original_title":"Once
+        Cable and other bad guys to save a boy''s life.","popularity":232.621,"poster_path":"/to0spRl1CMDvyUbOnbb4fTk3VAd.jpg","release_date":"2018-05-10","title":"Deadpool
+        2","video":false,"vote_average":7.492,"vote_count":17640},{"adult":false,"backdrop_path":"/5ZSwZPKgcTJJwhxjbOHeoBTVaKh.jpg","genre_ids":[35,28,12],"id":567604,"original_language":"en","original_title":"Once
         Upon a Deadpool","overview":"A kidnapped Fred Savage is forced to endure Deadpool''s
         PG-13 rendition of Deadpool 2, as a Princess Bride-esque story that''s full
-        of magic, wonder, and zero Fs.","popularity":120.26,"poster_path":"/5Ka49BWWyKMXr93YMbH5wLN7aAM.jpg","release_date":"2018-12-11","title":"Once
-        Upon a Deadpool","video":false,"vote_average":7.083,"vote_count":751},{"adult":false,"backdrop_path":"/sUELHitVw5U0tOJg0x34wY7eTuh.jpg","genre_ids":[28,35,80],"id":558144,"original_language":"en","original_title":"Deadpool:
+        of magic, wonder, and zero Fs.","popularity":101.408,"poster_path":"/5Ka49BWWyKMXr93YMbH5wLN7aAM.jpg","release_date":"2018-12-11","title":"Once
+        Upon a Deadpool","video":false,"vote_average":7.1,"vote_count":754},{"adult":false,"backdrop_path":"/sUELHitVw5U0tOJg0x34wY7eTuh.jpg","genre_ids":[28,35,80],"id":558144,"original_language":"en","original_title":"Deadpool:
         No Good Deed","overview":"Deadpool sees an opportunity to save the day, but
-        it doesn''t go entirely as planned.","popularity":128.362,"poster_path":"/wlKU9yB0Q8nfPMakBcSBT0JGS7.jpg","release_date":"2017-03-03","title":"Deadpool:
+        it doesn''t go entirely as planned.","popularity":99.762,"poster_path":"/wlKU9yB0Q8nfPMakBcSBT0JGS7.jpg","release_date":"2017-03-03","title":"Deadpool:
         No Good Deed","video":false,"vote_average":7.143,"vote_count":491}],"total_pages":1,"total_results":5}'
-  recorded_at: Tue, 27 Aug 2024 02:54:36 GMT
+  recorded_at: Tue, 03 Sep 2024 00:27:34 GMT
 recorded_with: VCR 6.2.0

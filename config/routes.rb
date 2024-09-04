@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
   get '/register', to: 'users#new', as: 'register_user'
+  get '/login', to: 'users#login_form'
+  post '/login', to: 'users#login'
   
   resources :users, only: [:show, :create] do
     get '/discover', to: 'discover#index', as: 'discover_movie'

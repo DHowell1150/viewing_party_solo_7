@@ -44,17 +44,15 @@ http_interactions:
       - Accept-Encoding,accept-encoding
       - Origin
       X-Cache:
-      - Hit from cloudfront
+      - Miss from cloudfront
       Via:
-      - 1.1 17a5b9b0c17eb15303e6341f5fc26610.cloudfront.net (CloudFront)
+      - 1.1 be7f6ce4397843276657a8babac08b6e.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - i8F8jNUX2369M6m7-a5SY6lpcN73eE7N5bGYZAsdKenOyJ_y3unVyw==
-      Age:
-      - '72'
+      - 5-y1R6894rNdenT3eGCZvPqmz-gnMaSQ2GRDLALD5SgJEreSAXM25A==
     body:
       encoding: UTF-8
       string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/avedvodAZUcwqevBfm8p4G2NziQ.jpg","genre_ids":[18,80],"id":278,"original_language":"en","original_title":"The
@@ -164,62 +162,5 @@ http_interactions:
         camp during World War II. While locked up he tries to convince his son that
         the whole thing is just a game.","popularity":64.441,"poster_path":"/74hLDKjD5aGYOotO6esUVaeISa2.jpg","release_date":"1997-12-20","title":"Life
         Is Beautiful","video":false,"vote_average":8.4,"vote_count":12891}],"total_pages":481,"total_results":9604}'
-  recorded_at: Tue, 03 Sep 2024 00:27:35 GMT
-- request:
-    method: get
-    uri: https://api.themoviedb.org/3/search/movie?api_key=<CONGRESS_API_KEY>&query
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.10.1
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json;charset=utf-8
-      Content-Length:
-      - '57'
-      Connection:
-      - keep-alive
-      Date:
-      - Tue, 03 Sep 2024 00:27:35 GMT
-      Server:
-      - openresty
-      Cache-Control:
-      - public, max-age=20502
-      X-Memc:
-      - HIT
-      X-Memc-Key:
-      - 0b5947bc31aeddd8f20b6f446a3fa89e
-      X-Memc-Age:
-      - '4182'
-      X-Memc-Expires:
-      - '20502'
-      Etag:
-      - W/"0e23279b004381f72a34159d5c7dfd1f"
-      Vary:
-      - Accept-Encoding,accept-encoding
-      - Origin
-      X-Cache:
-      - Miss from cloudfront
-      Via:
-      - 1.1 be7f6ce4397843276657a8babac08b6e.cloudfront.net (CloudFront)
-      X-Amz-Cf-Pop:
-      - DEN52-C1
-      Alt-Svc:
-      - h3=":443"; ma=86400
-      X-Amz-Cf-Id:
-      - dzxuV9d5kkQr8uTsqrR9z2WPZXTP07yUP_KJ4-_jE358F5qRftnKNQ==
-    body:
-      encoding: UTF-8
-      string: '{"page":1,"results":[],"total_pages":1,"total_results":0}'
-  recorded_at: Tue, 03 Sep 2024 00:27:35 GMT
+  recorded_at: Tue, 03 Sep 2024 00:26:23 GMT
 recorded_with: VCR 6.2.0

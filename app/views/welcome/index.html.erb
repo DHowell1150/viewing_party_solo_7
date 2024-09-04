@@ -1,5 +1,9 @@
-
 <h1>Viewing Party</h1>
+<% if !@current_user %>
+   <%= button_to 'Create New User', register_user_path, method: :get, class: "btn btn-lg btn-outline-secondary" %><br>
+<% else %>
+   <%= link_to 'I already have an account', login_path %>
+<% end %>
 
 <h2>Existing Users</h2>
 <ul id="existing_users">
@@ -7,5 +11,3 @@
       <li><%= link_to user.email, "users/#{user.id}" %></li>
    <% end %>
 </ul>
-
-<%= button_to 'Create New User', register_user_path, method: :get, class: "btn btn-lg btn-outline-secondary" %><br>

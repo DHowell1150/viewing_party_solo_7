@@ -3,18 +3,18 @@ require 'rails_helper'
 RSpec.describe 'Discover Page, Discover Index', type: :feature do
   describe 'When a user visits the discover path "/users/:id/discover"' do
     before(:each) do
-      @user_1 = User.create!(name: 'Jane Doe', email: 'jane@email.com')
+      @user_1 = User.create!(name: 'Jane Doe', email: 'jane@email.com', password: 'test123')
 
       visit user_discover_movie_path(@user_1)
     end
 
-    it 'They have link to Discover Top Rated Movies' do
+    it 'They have link to Discover Top Rated Movies', :vcr do
       expect(page).to have_button('Discover Top Rated Movies')
       click_button 'Discover Top Rated Movies'
       expect(current_path).to eq(user_movies_path(@user_1))
     end
 
-    it 'They can fill out a text field to enter keyword(s) to search by movie title' do
+    it 'They can fill out a text field to enter keyword(s) to search by movie title', :vcr do
       expect(page).to have_field(:search)
       expect(page).to have_button('Find Movies')
       fill_in :search, with: 'Deadpool'
@@ -25,6 +25,7 @@ RSpec.describe 'Discover Page, Discover Index', type: :feature do
   end
 end
 
+# Example spec from mentor
 
 # require 'rails_helper'
 
@@ -72,26 +73,26 @@ end
 #       end
 #     end
 
-#     #% 2b. Movie Results Page: Search Movies
-#     #! There should only be a maximum of 20 results. The above details should be listed for each movie.
-#     VCR.use_cassette('returns_the_movies_that_match_from_a_search.yml') do
-#       it 'returns the movies that match from a search', :vcr do
-#         visit user_discover_path(@cydnee)
-#         within '.search-movie-title' do
-#           fill_in :search, with: 'Mis'
-#           click_on 'Search by Movie Title'
-#         end
-#         expect(current_path).to eq(user_movies_path(@cydnee))
+    #% 2b. Movie Results Page: Search Movies
+    #! There should only be a maximum of 20 results. The above details should be listed for each movie.
+    # VCR.use_cassette('returns_the_movies_that_match_from_a_search.yml') do
+    #   it 'returns the movies that match from a search', :vcr do
+    #     visit user_discover_path(@cydnee)
+    #     within '.search-movie-title' do
+    #       fill_in :search, with: 'Mis'
+    #       click_on 'Search by Movie Title'
+    #     end
+    #     expect(current_path).to eq(user_movies_path(@cydnee))
         
-#         within '.search-results' do
-#           within '#movie-267970' do
-#             expect(page).to have_content('Title: Miss Hokusai')
-#             expect(page).to have_link('Miss Hokusai')
-#             expect(page).to have_content('Vote Average: 6.7')
-#           end
-#         end
-#         expect(page).to have_button('Return to Discover Page')
-#       end
-#     end
-#   end
+    #     within '.search-results' do
+    #       within '#movie-267970' do
+    #         expect(page).to have_content('Title: Miss Hokusai')
+    #         expect(page).to have_link('Miss Hokusai')
+    #         expect(page).to have_content('Vote Average: 6.7')
+    #       end
+    #     end
+    #     expect(page).to have_button('Return to Discover Page')
+    #   end
+    # end
+  # end
 # end
