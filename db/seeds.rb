@@ -8,7 +8,7 @@
 
 # create Users
 10.times do 
-   User.create!(name: Faker::Name.name, email: Faker::Internet.email)
+   User.create!(name: Faker::Name.name, email: Faker::Internet.email, password: "password")
 end
 
 # create Parties
